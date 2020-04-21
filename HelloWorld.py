@@ -1,36 +1,36 @@
-x = "Hello World" #str
-print(type(x))
-x = 1 + 2 + 3
-print(type(x))
+i = "Hello World" #str
+print(type(i))
+i = 1 + 2 + 3
+print(type(i))
 a = 5
 b = 2
 tmp = a
 a = b
 b = tmp
 print(a, b, tmp)
-x = y = z = 0 #каскадное присваивание
-print(x, y, z)
+i = y = z = 0 #каскадное присваивание
+print(i, y, z)
 # множественное присваивание
-x, y, z = 1, 2, 3
-print(x, y, z)
+i, y, z = 1, 2, 3
+print(i, y, z)
 a, b = 1, 2
 a, b = b, a
 print(a, b)
-x = 5
+i = 5
 y = 3
 z = 2
-print(x ** y ** z)
+print(i ** y ** z)
 print(2/3)
-x = 5
+i = 5
 y = 2
-print(x // y) #div
-print(x % y) #mod
-x = 0
+print(i // y) #div
+print(i % y) #mod
+i = 0
 counter = 0
-while x < 5 :
+while i < 5 :
     counter += 1
-    x += 1
-    print(x, counter)
+    i += 1
+    print(i, counter)
 
 
 
