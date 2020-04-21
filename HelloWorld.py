@@ -25,6 +25,12 @@ x = 5
 y = 2
 print(x // y) #div
 print(x % y) #mod
+x = 0
+counter = 0
+while x < 5 :
+    counter += 1
+    x += 1
+    print(x, counter)
 
 
 
