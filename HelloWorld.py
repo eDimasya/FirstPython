@@ -1,36 +1,28 @@
-i = "Hello World" #str
-print(type(i))
-i = 1 + 2 + 3
-print(type(i))
-a = 5
-b = 2
-tmp = a
-a = b
-b = tmp
-print(a, b, tmp)
-i = y = z = 0 #каскадное присваивание
-print(i, y, z)
-# множественное присваивание
-i, y, z = 1, 2, 3
-print(i, y, z)
-a, b = 1, 2
-a, b = b, a
-print(a, b)
-i = 5
-y = 3
-z = 2
-print(i ** y ** z)
-print(2/3)
-i = 5
-y = 2
-print(i // y) #div
-print(i % y) #mod
-i = 0
-counter = 0
-while i < 5 :
-    counter += 1
-    i += 1
-    print(i, counter)
+def is_simple_number(x):
+    """"Является ли число простым
+        x - целое положительное число
+        Если простое, то возвращает True,
+        Иначе - False
+    """
+    divisor = 2
+    while divisor < x:
+        if x % divisor == 0:
+            return False
+        divisor += 1
+    return True
 
 
+def factorize_number(x):
+    """
+    Раскладывает число на множители
+    :param x: целое положительное
+    :return: Печатет на экран
+    """
+    divisor = 2
+    while x > 1:
+        if x % divisor == 0:
+            print(divisor)
+            x //= divisor
+        else:
+            divisor += 1
 
